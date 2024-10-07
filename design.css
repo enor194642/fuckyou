@@ -8,7 +8,6 @@ body {
     position: relative; 
 }
 
-
 section {
     position: absolute;
     top: 0;
@@ -31,7 +30,7 @@ section {
     }
 }
 
-star {
+.star {
     position: absolute;
     width: 1px;
     height: 2px;
@@ -41,7 +40,7 @@ star {
     animation: animate 3s linear infinite;
 }
 
-star::before {
+.star::before {
     content: '';
     position: absolute;
     transform: translateY(-50%);
@@ -65,18 +64,16 @@ star::before {
     }
 }
 
-
-star:nth-child(1) { top: 0; right: 0; animation-delay: 10s; animation-duration: 1s; }
-star:nth-child(2) { top: 0; right: 80px; animation-delay: 12s; animation-duration: 3s; }
-star:nth-child(3) { top: 80px; right: 0px; animation-delay: 4s; animation-duration: 3s; }
-star:nth-child(4) { top: 0; right: 180px; animation-delay: 6s; animation-duration: 1.5s; }
-star:nth-child(5) { top: 0; right: 400px; animation-delay: 8s; animation-duration: 2.5s; }
-star:nth-child(6) { top: 0; right: 600px; animation-delay: 4s; animation-duration: 3s; }
-star:nth-child(7) { top: 300px; right: 0px; animation-delay: 8s; animation-duration: 3.7s; }
-star:nth-child(8) { top: 0; right: 700px; animation-delay: 8s; animation-duration: 3.7s; }
-star:nth-child(9) { top: 0; right: 1000px; animation-delay: 8s; animation-duration: 3.7s; }
-star:nth-child(10) { top: 0; right: 450px; animation-delay: 8s; animation-duration: 3.7s; }
-
+.star:nth-child(1) { top: 0; right: 0; animation-delay: 10s; animation-duration: 1s; }
+.star:nth-child(2) { top: 0; right: 80px; animation-delay: 12s; animation-duration: 3s; }
+.star:nth-child(3) { top: 80px; right: 0px; animation-delay: 4s; animation-duration: 3s; }
+.star:nth-child(4) { top: 0; right: 180px; animation-delay: 6s; animation-duration: 1.5s; }
+.star:nth-child(5) { top: 0; right: 400px; animation-delay: 8s; animation-duration: 2.5s; }
+.star:nth-child(6) { top: 0; right: 600px; animation-delay: 4s; animation-duration: 3s; }
+.star:nth-child(7) { top: 300px; right: 0px; animation-delay: 8s; animation-duration: 3.7s; }
+.star:nth-child(8) { top: 0; right: 700px; animation-delay: 8s; animation-duration: 3.7s; }
+.star:nth-child(9) { top: 0; right: 1000px; animation-delay: 8s; animation-duration: 3.7s; }
+.star:nth-child(10) { top: 0; right: 450px; animation-delay: 8s; animation-duration: 3.7s; }
 
 .sidebar {
     position: absolute;
@@ -119,7 +116,6 @@ star:nth-child(10) { top: 0; right: 450px; animation-delay: 8s; animation-durati
 .sidebar a:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
-
 
 .search-box {
     position: absolute;
@@ -172,10 +168,15 @@ star:nth-child(10) { top: 0; right: 450px; animation-delay: 8s; animation-durati
 .search-box:hover .search-btn i {
     color: #007BFF;
 }
-.footer-text {
+
+#zodiac-result {
     position: absolute;
-    bottom: 20px; 
-    left: 10px; 
-    color: white; 
-    font-size: 14px; /* Font size for footer text */
+    top: 50%; 
+    left: 30%; 
+    transform: translate(-50%, -50%); 
+    text-align: center; 
+    background: rgba(0, 0, 0, 0.7); 
+    padding: 20px; 
+    border-radius: 10px; 
+    color: white;
 }
